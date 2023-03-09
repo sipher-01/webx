@@ -687,3 +687,31 @@ a {
         border: 0;
     }
 }
+
+
+/* hero */
+
+.hero {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 80%);
+}
+
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;
+}
+
+.hero__image {
+    width: 100%;
+}
+
+@media screen and (min-width:1024px) {
+    .hero__content {
+        text-align: left;
+        align-self: center;
+    }
+    .hero {
+        padding-top: 0;
+    }
+}
