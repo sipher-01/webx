@@ -555,7 +555,7 @@ a {
         width: auto;
         max-width: 1150px;
         max-height: 200px;
-        margin-left: 100px;
+        margin: auto;
     }
     .callout__content {
         text-align: left;
@@ -627,19 +627,26 @@ a {
     color: #fff;
 }
 
-.block--skewed-right {
+.block--skewed-right  {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
-}
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%); 
+} 
 
 .block--skewed-left {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%); 
 }
 
 .container {
     max-width: 1140px;
     margin: 0 auto;
+}
+@media screen and ( min-width: 1148px){
+    .block--skewed-right {
+        padding-bottom: calc(var(--padding-vertical) + 4rem);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%); 
+    }
+    
 }
 
 
